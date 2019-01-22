@@ -13,7 +13,6 @@ public class Deck extends Cards {
     //Going to save the cards to a deck.
     //Going to call the deck object in the program 4 times
 
-
     public void makeAHand(Cards myCard) {
 
         ArrayList<Cards> cardHand = new ArrayList<>();

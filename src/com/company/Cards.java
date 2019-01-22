@@ -14,64 +14,80 @@ public class Cards {
         this.cardNumber = cardNumber;
     }
 
-    public String setCardValue(){
 
-        int number = (int)((Math.random() * 4) +1);
-       switch (number){
-           case 1:
-               cardValue = "Hearts";
+    public void setCardValue(String cardValue) {
+
+        int number = (int) ((Math.random() * 4) + 1);
+
+        switch (number) {
+            case 1:
+
+                cardValue = "Hearts";
                 break;
-           case 2:
-               cardValue = "Spades";
-               break;
-           case 3:
-               cardValue = "Diamonds";
-               break;
-           case 4:
-               cardValue = "Clubs";
 
-       }
-       return cardValue;
+            case 2:
 
+                cardValue = "Spades";
+                break;
+
+            case 3:
+
+                cardValue = "Diamonds";
+                break;
+
+            case 4:
+
+                cardValue = "Clubs";
+
+        }
+
+        this.cardValue = cardValue;
     }
 
     public String getCardValue() {
         return cardValue;
     }
 
-    public String getCardNumber() {
-        return cardNumber;
-    }
-
-    public void setCardNumber(){
+    public void setCardNumber() {
 
         int num = (int) ((Math.random() * 13) +1);
 
         if(num ==1){
 
-            cardNumber = "Ace";
+            this.cardNumber = "Ace";
+
         } else if (num == 11){
-           cardNumber =  "Jack";
+
+           this.cardNumber =  "Jack";
+
         } else if (num == 12){
-            cardNumber =  "Queen";
+
+            this.cardNumber =  "Queen";
+
         }else if (num == 13){
-            cardNumber =  "King";
+
+            this.cardNumber =  "King";
+
         }  else {
 
-            cardNumber = Integer.toString(num);
+            this.cardNumber = Integer.toString(num);
         }
+        
 
+    }
 
-
+    public String getCardNumber() {
+        return cardNumber;
     }
 
 
     public Cards makeOneCard(){
+
         Cards oneCard = new Cards();
 
-      oneCard.setCardNumber();
+      oneCard.setCardValue(cardValue);
 
-      oneCard.setCardValue();
+      oneCard.setCardNumber();
 
      return oneCard;
 
