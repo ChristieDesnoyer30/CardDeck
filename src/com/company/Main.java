@@ -12,20 +12,17 @@ public class Main {
         // What about a Deck object?
 
         Cards oneCard = new Cards();
+
         Deck newDeck = new Deck();
 
-        System.out.println("First players hand: ");
+
+        for(int i = 1; i <= 4; i++){
+
+        System.out.println("Player "+ i + " hand :");
+
         newDeck.makeAHand(oneCard);
 
-        System.out.println("Second Players hand: ");
-        newDeck.makeAHand(oneCard);
-
-        System.out.println("Third players hand: ");
-        newDeck.makeAHand(oneCard);
-
-        System.out.println("Fourth Players hand: ");
-        newDeck.makeAHand(oneCard);
-
+        }
 
 
     }

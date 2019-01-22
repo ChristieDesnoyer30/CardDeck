@@ -18,9 +18,10 @@ public class Deck extends Cards {
         ArrayList<Cards> cardHand = new ArrayList<>();
 
         for (int i = 1; i <= 5; i++) {
-         cardHand.add(myCard.makeOneCard());
-        }
 
+         cardHand.add(myCard.makeOneCard());
+
+        }
 
         System.out.println(cardHand);
 
