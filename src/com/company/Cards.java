@@ -22,35 +22,35 @@ public class Cards {
         switch (number) {
             case 1:
 
-                cardValue = "Hearts";
+                this.cardValue = "Hearts";
                 break;
 
             case 2:
 
-                cardValue = "Spades";
+               this.cardValue = "Spades";
                 break;
 
             case 3:
 
-                cardValue = "Diamonds";
+                this.cardValue = "Diamonds";
                 break;
 
             case 4:
 
-                cardValue = "Clubs";
+                this.cardValue = "Clubs";
 
         }
 
-        this.cardValue = cardValue;
+
     }
 
     public String getCardValue() {
         return cardValue;
     }
 
-    public void setCardNumber() {
+    public void setCardNumber(String cardNumber) {
 
-        int num = (int) ((Math.random() * 13) +1);
+        int num = (int) ((Math.random() * 13) + 1);
 
         if(num ==1){
 
@@ -72,7 +72,7 @@ public class Cards {
 
             this.cardNumber = Integer.toString(num);
         }
-        
+
 
     }
 
@@ -87,7 +87,7 @@ public class Cards {
 
       oneCard.setCardValue(cardValue);
 
-      oneCard.setCardNumber();
+      oneCard.setCardNumber(cardNumber);
 
      return oneCard;
 
