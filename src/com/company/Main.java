@@ -13,7 +13,7 @@ public class Main {
 
         Cards oneCard = new Cards();
 
-        Deck newDeck = new Deck();
+        CardHand newDeck = new CardHand();
 
 
         for(int i = 1; i <= 4; i++){

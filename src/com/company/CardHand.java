@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 
-public class Deck extends Cards {
+public class CardHand extends Cards {
 
 
     //Im going to use DECK to make a hand instead
@@ -12,6 +12,10 @@ public class Deck extends Cards {
     //Going to have a condition if there are two of the same
     //Going to save the cards to a deck.
     //Going to call the deck object in the program 4 times
+
+    public CardHand() {
+        super();
+    }
 
     public void makeAHand(Cards myCard) {
 
@@ -21,7 +25,9 @@ public class Deck extends Cards {
 
          cardHand.add(myCard.makeOneCard());
 
+
         }
+
 
         System.out.println(cardHand);
 
