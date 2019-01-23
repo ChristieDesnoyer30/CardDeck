@@ -85,9 +85,9 @@ public class Cards {
 
         Cards oneCard = new Cards();
 
-      oneCard.setCardValue(cardValue);
+       oneCard.setCardValue(cardValue);
 
-      oneCard.setCardNumber(cardNumber);
+       oneCard.setCardNumber(cardNumber);
 
      return oneCard;
 
