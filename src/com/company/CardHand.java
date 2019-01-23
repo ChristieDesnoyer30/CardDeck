@@ -1,17 +1,12 @@
 package com.company;
 
 import java.util.ArrayList;
-
+import java.util.Arrays;
 
 
 public class CardHand extends Cards {
 
-
-    //Im going to use DECK to make a hand instead
-    //Going to make an array of 52 cards
-    //Going to have a condition if there are two of the same
-    //Going to save the cards to a deck.
-    //Going to call the deck object in the program 4 times
+ //Using this to create a Card Hand object that will add 5 cards to an array list
 
     public CardHand() {
         super();
@@ -19,17 +14,19 @@ public class CardHand extends Cards {
 
     public void makeAHand(Cards myCard) {
 
-        ArrayList<Cards> cardHand = new ArrayList<>();
+        ArrayList<Cards> cardDeck = new ArrayList<>();
 
         for (int i = 1; i <= 5; i++) {
 
-         cardHand.add(myCard.makeOneCard());
-
+         cardDeck.add(myCard.makeOneCard());
 
         }
 
+        for (Cards cards : cardDeck) {
+           System.out.print(cards + "  ");
+        }
 
-        System.out.println(cardHand);
+       // System.out.println(cardDeck);
 
         }
 

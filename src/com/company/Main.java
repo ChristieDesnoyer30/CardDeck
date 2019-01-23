@@ -11,16 +11,18 @@ public class Main {
         // For example, how might you structure a Card object? What properties should it have?
         // What about a Deck object?
 
+        //create a card object to use within the CardHand object
         Cards oneCard = new Cards();
 
-        CardHand newDeck = new CardHand();
+        //creating a card hand object to call the make a hand method
+        CardHand newHand = new CardHand();
 
 
         for(int i = 1; i <= 4; i++){
 
-        System.out.println("Player "+ i + " hand :");
+        System.out.print("\nPlayer "+ i + " hand : ");
 
-        newDeck.makeAHand(oneCard);
+        newHand.makeAHand(oneCard);
 
         }
 
